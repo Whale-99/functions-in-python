@@ -1,8 +1,18 @@
-def print_params(x):
-    print(x)
-    print(x)
+def get_matrix(n, m, value):
+    matrix = []
 
+    for i in range(n):
+        row = []
 
-print_params("Hello")
-print_params(42)
-print_params([1, 2, 3])
+        for j in range(m):
+            row.append(value)
+
+        matrix.append(row)
+
+    return matrix
+
+n = 3
+m = 4
+value = 7
+result = get_matrix(n, m, value)
+print(result)
